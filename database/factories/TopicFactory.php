@@ -14,6 +14,8 @@ $factory->define(App\Models\Topic::class, function (Faker $faker) {
         return [
             'title' =>   $sentence,
             'body'  =>   $faker->text(),
+            //后面教程中的slug在此处直接生成
+            'slug'  =>   trim($sentence,'.'),
             'excerpt' => $sentence,
             'created_at' => $created_at,
             'updated_at' => $updated_at,
