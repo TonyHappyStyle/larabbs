@@ -18,7 +18,7 @@ class RepliesTableSeeder extends Seeder
         //获取Faker实例
         $faker = app(Faker\Generator::class);
 
-        $replies = factory(Reply::class)->times(1000)
+        $replies = factory(Reply::class)->times(10000)
             ->make()
             ->each(function ($reply, $index)
                 use($user_ids,$topic_ids,$faker){

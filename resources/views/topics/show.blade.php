@@ -60,7 +60,7 @@
       <div class="card topic-reply mt-4">
         <div class="card-body">
           @includeWhen(Auth::check(),'topics._reply_box', ['topic' => $topic])
-          @include('topics._reply_list', ['replies' => $topic->replies()->orderBy('created_at','desc')->with('user')->get()])
+          @include('topics._reply_list', ['replies' => $topic->replies()->orderBy('created_at','desc')->with('user')->paginate(10)])
         </div>
       </div>
     </div>

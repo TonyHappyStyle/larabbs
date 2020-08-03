@@ -40,4 +40,5 @@
     @endif
 
   @endforeach
+  {!! $replies->render() !!}
 </ul>
