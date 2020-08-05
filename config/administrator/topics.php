@@ -83,7 +83,7 @@ return [
         ],
         'title' => [
             'title'                 => '内容标题',
-            'type'                  => 'relationship',
+//            'type'                  => 'relationship',
             'name_field'            => 'title',
             'autocomplete'          => true,
             'search_fields'         => array("CONCAT(id,' ',title)"),
