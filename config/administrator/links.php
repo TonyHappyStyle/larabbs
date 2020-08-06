@@ -3,7 +3,7 @@ use App\Models\Link;
 
 return [
     'title'         => '推荐资源',
-    'single'        => '评论',
+    'single'        => '推荐资源',
     'model'         => Link::class,
     'columns' => [
         'id' => [
